@@ -1,23 +1,3 @@
-# import requests
-# import json
-#
-# def speak(str):
-#     from win32com.client import Dispatch
-#     speak = Dispatch("SAPI.Spvoice")
-#     speak.Speak(str)
-#
-# if __name__ == '__main__':
-#     speak("Today's news headlines are")
-#     url = "https://newsapi.org/v2/top-headlines?country=in&apiKey=2141b2ccd45543bb891ea29b95d40ca1"
-#     news = requests.get(url).text
-#     news = json.loads(news)
-#     print(news["articles"])
-#     arts = news['articles']
-#     for article in arts:
-#         speak(article['title'])
-#         speak("Moving on")
-#     speak("Thanks for listening.")
-
 import requests as rq, json
 def speak(string_to_speak):
     from win32com.client import Dispatch
